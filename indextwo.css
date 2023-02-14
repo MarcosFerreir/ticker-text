@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&display=swap');
+ /*font-family: 'Comic Neue', cursive;*/
+
+
+body{
+    margin:0;
+    background-color: #131313;
+    font-family: 'Bebas Neue', cursive;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.scroll{
+    white-space:nowrap;
+   margin:0 2em;
+
+
+}
+.scroll div{
+    display: flex;
+    gap:2em;
+}
+.scroll p{
+    font-size: 5em;
+    color:white;
+   /* font-weight: bold;*/
+    margin-bottom: 250px;
+   /* line-height: 10px;*/
+
+
+}
+
+.RightToLeft{
+    animation: RightToLeft 40s infinite linear;
+}
+@keyframes RightToLeft {
+   from
+    {transform:translateX(0%);    
+    }
+    to
+    {
+        transform: translateX(-50%);
+    }
+}
+
+.esquerda{
+    animation: esquerda 40s infinite linear;
+}
+@keyframes esquerda {
+   from
+    {transform:translateX(-50%);    
+    }
+    to
+    {
+        transform: translateX(0%);
+    }
+}
